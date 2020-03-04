@@ -12,7 +12,7 @@ V4V stands for *Vim for Vertica*. It's a set of VIM plugins and syntax files in 
 V4V consists of: 
 - VIM Syntax file: ```sqlvertica.vim```
 - VIM File Type plugin: ```sql.vim```
-- settings to be addede to your VIM initialization file: ```.vimrc``` 
+- settings to be added to your VIM initialization file: ```.vimrc``` 
 
 ## Which tools are used by V4V 
 V4V uses: 
