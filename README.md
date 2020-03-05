@@ -52,7 +52,7 @@ Mac version doesn't need any installation because ```pbcopy``` is available by d
 
 And, finally, to produce the graphical EXPLAIN plan, V4V uses GraphViz.More specifically the program ```dot```. The installation of this product depends on your operating system... it could be ```sudo apt install graphviz``` under Linux Ubuntu, ```sudo yum install graphviz``` under Linux CentOS or ```brew install graphviz``` on your Mac.
 
-## V4V Installation in 5 easy steps
+## V4V Installation in 4 easy steps
 
  - Step 1: Create a backup copy of your ```.vimrc``` before modifying it. 
  - Step 2:   *merge*  ```sample.vimrc``` with your pre-existing copy. The important settings are: 
