@@ -82,8 +82,8 @@ endfunction
 command! -range=% Copy2HTML :silent call CopyToHTML(<line1>,<line2>)
 ```
 
-- Step 3: copy V4V's syntax file ```sqlvertica.vim``` under ```~/.vim/syntax/```  (create this directory if doesn't exist) 
-- Step 4: copy V4V's File Type plugin ```sql.vim``` under ``~/.vim/after/ftplugin```  (create this directory if doesn't exist) 
+- Step 3: copy V4V's syntax file ```sqlvertica.vim``` under your local syntax directory (for example ```~/.vim/syntax/```) 
+- Step 4: copy V4V's File Type plugin ```sql.vim``` under your local *after-directory*. You can check the location in VIM with ```:echo &rtp```. It could be something like ```~/.vim/after/ftplugin``` (Linux) or ```~.vim/ftplugin``` (Mac). 
 
 
 ## How to use V4V 
