@@ -61,7 +61,25 @@ let g:sql_type_default = 'sqlvertica'
 nnoremap <Tab> za " Toggle to expand/close folds 
 menu 20.351 Edit.Copy\ to\ HTML :'<,'>Copy2HTML<CR> 
 vnoremenu 1.31 PopUp.Copy\ to\ HTML :'<,'>Copy2HTML<CR> 
-function! CopyToHTML(line1, line2) 
+```
+And the ```CopyToHTML``` function to copy formatted SQL:
+```vim
+function! CopyToHTML(line1, line2)
+"Copy_to_HTML
+function! CopyToHTML(line1, line2)
+    let g:html_number_lines=0
+    let g:html_ignore_folding=1
+    let g:html_dynamic_folds=0
+    let g:html_use_css=0
+    let g:html_font="Courier"
+    exec a:line1.','.a:line2.'TOhtml'
+    %g/<body/normal k$dgg
+    %s/<body\s*\(bgcolor="[^"]*"\)\s*text=\("[^"]*"\).*$/<table \1 width="95%" cellPadding=0><tr><td><font color=\2>/
+    %s#</body>\(.\|\n\)*</html>#\='</font></td></tr></table>'#i
+    w !pbcopy " Mac: pbcopy, Linux: xclip -selection clipboard
+    q!  
+endfunction
+command! -range=% Copy2HTML :silent call CopyToHTML(<line1>,<line2>)
 ```
 
 - Step 3: copy V4V's syntax file ```sqlvertica.vim``` under ```~/.vim/syntax/```  (create this directory if doesn't exist) 
