@@ -107,6 +107,9 @@ Start vim (or its GUI version gvim) and open your SQL file
    - Select the lines you want to copy 
    - Run :```'<,'>Copy2HTML<CR>``` or (gvim): right click and select ```Copy to HTML``` 
 
+With a graphical version of Vim, right-clicking on a selected query should present a menu like this:
+![gvim-right click menu](images/gvim.png) 
+
 ## How to customize V4V
 As we said Vim for Vertica uses - by default - ```vsql``` to interact with Vertica. Sometimes you might want to change the standard environment variables used by ```vsql``` in V4V to use a different database, or a different host or user.  
  - to check all environment variables used by VSQL: ```:!set | grep VSQL_```
