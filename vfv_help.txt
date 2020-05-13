@@ -1,0 +1,33 @@
+Vim For Vertica Key Mappings
+============================
+
+F3  to Format selected SQL 
+F4  to Run selected SQL 
+F5  to Explain selected SQL 
+F6  to Graphical Explain selected SQL 
+F7  to Print VSQL_ environment variables
+F8  to (mini) profile selected SQL (new tab)
+F9  to vim-source the block of text under the cursor
+F10 to list running jobs (new tab)
+F12 to list host resources (new tab)
+
+vip to visual select paragraph
+TAB to Open/Close a "fold"
+
+,D  to get DDL for the table under the cursor (new tab)
+,I  to get Info for the table under the cursor (new tab)
+
+,s  to generate SELECT for the table under the cursor (new tab)
+,i  to generate INSERT for the table under the cursor (new tab)
+,u  to generate UPDATE for the table under the cursor (new tab)
+,m  to generate MERGE for the table under the cursor (new tab)
+,w  to generate WHERE for the table under the cursor (new tab)
+,c  to generate COPY for the table under the cursor (new tab)
+,h  to print this help
+
+,.s to generate SELECT for the table under the cursor (here)
+,.i to generate INSERT for the table under the cursor (here)
+,.u to generate UPDATE for the table under the cursor (here)
+,.m to generate MERGE for the table under the cursor (here)
+,.w to generate WHERE for the table under the cursor (here)
+,.c to generate COPY for the table under the cursor (here)
