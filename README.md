@@ -5,8 +5,8 @@ When the [best editor](www.vim.org) meets the [best database](www.vertica.com)..
 
 A lot of new functionalities have been added like:
 
-- the possibility to get DDL and detailed info on tables
-- the possibility to generate SQL starting from a table names thank to scripts contributed by my colleague and friend Marco Gessner
+- the possibility to get DDL and other info on tables
+- the possibility to generate SQL starting from a table names thank to the scripts contributed by my colleague and friend Marco Gessner
 - the possibility to get information about currently running SQL statements and other host information
 - lot of small issues have been fixed and scripts are now easier to read and maintain 
 
