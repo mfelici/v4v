@@ -44,8 +44,8 @@ V4V uses an external SQL formatter. You can use any SQL formatter you like as lo
 The default formatter (```sqlformat```) can be installed on Linux/Mac as follows:
 - Download```python-sqlparse``` from https://github.com/andialbrecht/sqlparse 
 - Install the python setup tools: ```sudo apt install python-setuptools```  
-- Install sqlparse: ```cd sqlparse-master && sudo python setup.py install``` 
 - Unzip sqlparse archihve: ```unzip sqlparse-master.zip``` 
+- Install sqlparse: ```cd sqlparse-master && sudo python setup.py install``` 
 
 This will create the /usr/local/bin/sqlformat executable which is then used by V4V. This tool has several options; check them with ```sqlfmt --help```. The ones used by default in V4V are:
 ``` 
