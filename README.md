@@ -40,15 +40,24 @@ You are free to use a different SQL clients and/or SQL formatters by changing th
 
 ## How to Install V4V 
 ### V4V Prerequisites
-V4V uses an external SQL formatter. You can use any SQL formatter you like as long as you change the default ```sqlformat``` call in the V4V's sql.vim plugin file.
-The default formatter (```sqlformat```) can be installed on Linux/Mac as follows:
+V4V uses an external SQL formatter. You can use any SQL formatter you like as long as you change the default ```sqlformat``` call in the V4V's sql.vim plugin file. The default formatter (```sqlformat```) can be installed either as a package:
+
+```
+sudo apt install sqlformat
+```
+
+or as a byproduct of ```python-sqlparse``` as follows:
+
 - Download```python-sqlparse``` from https://github.com/andialbrecht/sqlparse 
 - Install the python setup tools: ```sudo apt install python-setuptools```  
 - Install sqlparse: ```cd sqlparse-master && sudo python setup.py install``` 
 - Unzip sqlparse archihve: ```unzip sqlparse-master.zip``` 
 
-This will create the /usr/local/bin/sqlformat executable which is then used by V4V. This tool has several options; check them with ```sqlfmt --help```. The ones used by default in V4V are:
-``` 
+This will create the /usr/local/bin/sqlformat executable which is then used by V4V.
+
+```sqlformat``` has several options you might want to explore. This is the standard way v4v uses it:
+
+```
     sqlformat -k upper 
               -s 
               -r 
@@ -186,6 +195,4 @@ To set or change a VSQL environment variable:
  - ```:let $VSQL_PASSWORD="<my secret password>"```
  - ```:let $VSQL_PORT="5433"```
  - ```:let $VSQL_USER="<my user>"```
-
-
 
